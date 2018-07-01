@@ -4,13 +4,14 @@
   "description": "Mobile web app",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint components core data routes test tools", 
-    "build": "babel-node tools/run build", 
-    "serve": "babel-node tools/run serve" 
+    "lint": "eslint components core data routes test tools",
+    "build": "babel-node tools/run build",
+    "serve": "babel-node tools/run serve"
   },
   "author": "TheRocketHQ",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8"
   },
