@@ -4,7 +4,9 @@
   "description": "Mobile web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint components core data routes test tools", 
+    "build": "babel-node tools/run build", 
+    "serve": "babel-node tools/run serve" 
   },
   "author": "TheRocketHQ",
   "license": "ISC",
