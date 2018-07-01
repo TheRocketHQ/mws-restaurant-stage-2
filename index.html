@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+  <header>
+    <!-- Skips to Select -->
+    <a href="#neighborhoods-select" class="skip-link" tabindex="0">Skip to restaurant filter</a>
+    <nav>
+      <h1>
+        <a href="#neighborhoods-select">Restaurant Reviews</a>
+      </h1>
+    </nav>
+  </header>
+
+  <main id="maincontent">
+    <!-- Contains the website main content -->
+    <!-- Map -->
+    <section id="map-container" aria-labelledby="map-title">
+      <h2 id="map-title" class="offscreen">map</h2>
+      <div id="map"></div>
+    </section>
+    <!-- Filter -->
+    <section class="filter-options" aria-labelledby="filter-results">
+      <h2 id="filter-results">Filter Results</h2>
+      <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1">
+        <option value="all">All Neighborhoods</option>
+      </select>
+      <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <option value="all">All Cuisines</option>
+      </select>
+    </section>
+    <!-- Filter Results -->
+    <section id="filtered-restaurants" aria-labelledby="restaurant-list-title">
+      <h2 id="restaurant-list-title" class="offscreen">Restaurants list</h2>
+      <ul id="restaurants-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Copyright (c) 2017
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
+    <a href="#top" class="skip-link">Go to Top</a>
+  </footer>
+
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <!-- Main javascript file -->
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhbOMbQPETeI69aHxR3dYPhrP69U1_TOw &libraries=places&callback=initMap"></script>
+  <!-- End scripts -->
+
+
+</body>
+
+</html>
