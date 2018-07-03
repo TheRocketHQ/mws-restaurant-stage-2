@@ -19,5 +19,8 @@
   "homepage": "https://github.com/TheRocketHQ/mws-restaurant-stage-2#readme",
   "dependencies": {
     "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "webpack": "^4.14.0"
   }
 }
