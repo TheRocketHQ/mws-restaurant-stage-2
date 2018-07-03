@@ -1,11 +1,11 @@
-\
 {
   "name": "mws-restaurant-stage-2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "git": "^0.1.5"
   },
   "devDependencies": {
-    "webpack": "^4.14.0"
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
   }
 }
