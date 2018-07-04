@@ -5,3 +5,4 @@ import './js/main.js';
 import './js/restaurant-info.js';
 import './js/service-worker.js';
 import './scss/_base.scss';
+import './scss/_typography.scss';
