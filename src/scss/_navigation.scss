@@ -1,0 +1,88 @@
+/* ====================== Navigation ====================== */
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: transparent;
+    .banner {
+        height: 80px;
+        width: 100%;
+        background-color: darken($pickled-bluewood, 10%);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+    }
+    svg {
+        display: flex;
+        fill: $porcelian;
+        height: 32px;
+        margin-top: -3px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        align-self: center;
+    }
+    h1 {
+        text-shadow: 2px 2px 2px darken($marriner, 10%);
+        margin: 0;
+        align-self: center;
+        a {
+            color: $porcelian;
+            font-size: 0.8rem;
+            font-weight: 200;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            @include mobile-lrg {
+                font-size: 1rem;
+            }
+            @include tablet {
+                font-size: 2rem;
+            }
+            @include desktop {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+#breadcrumb {
+    padding: 10px 20px 16px;
+    list-style: none;
+    background-color: $marriner;
+    font-size: 17px;
+    margin: 0;
+    width: calc(50% - 40px);
+    display: flex;
+    @include mobile-tablet {
+        width: 100%;
+    }
+    /* Display list items side by side */
+    li {
+        display: inline;
+        color: #080808;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.5;
+        /* Add a slash symbol (/) before/behind each list item */
+        +li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+        /* Add a color to all links inside the list */
+        a {
+            color: #080808;
+            font-size: 22px;
+            font-weight: 300;
+            /* Add a color on mouse-over */
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
