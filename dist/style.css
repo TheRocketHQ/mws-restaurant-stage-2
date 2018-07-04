@@ -350,14 +350,14 @@ nav {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     margin: 15px;
     min-height: 380px;
     text-align: left;
     box-shadow: 5px 5px 25px 0 rgba(125, 121, 121, 0.4); }
     #restaurants-list li h3 {
       color: #1f1f1f;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-size: 14pt;
       font-weight: 200;
       letter-spacing: 0;
